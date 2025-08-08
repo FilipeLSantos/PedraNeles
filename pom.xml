@@ -43,5 +43,13 @@
         </plugins>
     </build>
     
+    <dependencies>
+        <dependency>
+            <groupId>io.github.guisso</groupId>
+            <artifactId>JanKenPon</artifactId>
+            <version>1.19</version>
+        </dependency>
+    </dependencies>
+    
     
 </project>

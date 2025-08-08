@@ -10,7 +10,5 @@ package flds6.aluno.ifnmg.pedraneles;
  */
 public class PedraNeles {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+   
 }
