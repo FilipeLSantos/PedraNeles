@@ -6,6 +6,7 @@ package flds6.aluno.ifnmg.pedraneles;
 
 import io.github.guisso.jankenpon.AbstractPlayer;
 import io.github.guisso.jankenpon.Move;
+import java.security.SecureRandom;
 
 /**
  *
@@ -15,12 +16,20 @@ public class PedraNeles extends AbstractPlayer{
 
     @Override
     public String getDeveloperName() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "Filipe Santos";
     }
 
     @Override
     public Move makeMyMove(Move opponentPreviousMove) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        if(opponentPreviousMove == Move.NONE)
+            return Move.ROCK;
+        else if(opponentPreviousMove == Move.PAPER)
+            return Move.SCISSORS;
+        else if(opponentPreviousMove == Move.SCISSORS)
+            return Move.ROCK;
+        else if(opponentPreviousMove == Move.ROCK)
+            return Move.PAPER;
+        
     }
 
    
