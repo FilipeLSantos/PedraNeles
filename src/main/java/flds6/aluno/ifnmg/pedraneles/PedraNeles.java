@@ -6,7 +6,6 @@ package flds6.aluno.ifnmg.pedraneles;
 
 import io.github.guisso.jankenpon.AbstractPlayer;
 import io.github.guisso.jankenpon.Move;
-import java.security.SecureRandom;
 
 /**
  *
@@ -22,7 +21,7 @@ public class PedraNeles extends AbstractPlayer{
     @Override
     public Move makeMyMove(Move opponentPreviousMove) {
         if(opponentPreviousMove == Move.NONE)
-            return Move.ROCK;
+            return Move.NONE;
         else if(opponentPreviousMove == Move.PAPER)
             return Move.SCISSORS;
         else if(opponentPreviousMove == Move.SCISSORS)
@@ -30,6 +29,7 @@ public class PedraNeles extends AbstractPlayer{
         else if(opponentPreviousMove == Move.ROCK)
             return Move.PAPER;
         
+        return Move.NONE;
     }
 
    
