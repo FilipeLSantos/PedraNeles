@@ -32,5 +32,4 @@ public class PedraNeles extends AbstractPlayer{
         return Move.NONE;
     }
 
-   
 }
